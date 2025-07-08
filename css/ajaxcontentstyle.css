@@ -1,0 +1,643 @@
+/*
+** 區塊【KV tags】id="edmsp_kv_tags"
+*/
+#edmsp_kv_tags{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+#edmsp_kv_tags .container img{
+    width: auto;
+}
+
+/*
+** 區塊【PC左側黏人精】id="edmsp_pcLeftSticky"
+*/
+#edmsp_pcLeftSticky {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    border-radius: 0 20px 20px 0;
+    width: 110px;
+    background-color: rgba(48, 47, 47, 0.8);
+    text-align: center;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Arial;
+    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(150px, 0, 0);
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(150px, 0, 0);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+
+    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body {
+    margin: 20px auto 10px;
+    margin-left: 10px;
+}
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body a {
+    display: block;
+    text-decoration: none;
+    color: #dacfbb;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body a:hover,
+.fixarea_tabbar .cate-hover a {
+    color: #ffe7a3;
+}
+
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body li {
+    padding: 10px 0;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    width: 64%;
+    height: 1px;
+    background-color: #5b0000;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-body li:last-child::before {
+    /*display: none;*/
+}
+
+  
+
+
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-footer {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-footer a {
+    display: block;
+    padding-top: 25px;
+    color: #dacfbb;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-footer::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 44%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0 5px 8px 5px;
+    border-style: solid;
+    border-color: transparent transparent #dacfbb transparent;
+}
+
+#edmsp_pcLeftSticky .edmsp_pcLeftSticky_menu-footer::before {
+    border-color: transparent transparent #ffe7a3 transparent;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*
+** 區塊【PC右側黏人精】id="edmsp_pcRightSticky"
+*/
+
+#edmsp_pcRightSticky {
+    z-index: 999;
+    position: fixed;
+    top: 70px;
+    right: 13px;
+    width: 135px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 48px;
+    font-family: Century Gothic, "微軟正黑體", Helvetica;
+    text-align: center;
+    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_quickTour {
+    position: absolute;
+    top: 100px;
+    right: -50px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    width: 45px;
+    height: auto;
+    font-size: 16px;
+    line-height: 30px;
+    writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    text-align: left;
+    cursor: pointer;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+/*收合黏人精*/
+
+#edmsp_pcRightSticky.edmsp_pcRightSticky_menu_hide {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(150px, 0, 0);
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(150px, 0, 0);
+}
+
+#edmsp_pcRightSticky.edmsp_pcRightSticky_menu_hide .edmsp_pcRightSticky_quickTour {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(-205px, 0, 0);
+    transform: rotate3d(0, 0, 0, 0deg) translate3d(-205px, 0, 0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuLogo {
+    width: 100%;
+    cursor: pointer;
+}
+
+#edmsp_pcRightSticky ul {
+    padding: 0;
+    list-style: none;
+    width: 120px;
+    margin: 0 0 0 13px;
+    display: flow-root;
+}
+
+#edmsp_pcRightSticky ul li {
+    padding: 0;
+    height: 36px;
+    line-height: 36px;
+}
+
+#edmsp_pcRightSticky ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupA {
+    border: 1px #f3da35 solid;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupA li {
+    margin: 0 0 1px 0;
+    background-color: #fff;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupB {
+    border: 1px #f3da35 solid;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupB li {
+    margin: 0 0 1px 0;
+    background-color: rgba(249, 255, 159, 0.8);
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupC {
+    background-color: #f3da35;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupC {
+    border: 1px #f3da35 solid;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupC li {
+    margin: 0 0 1px 0;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupC li a {
+    color: #fff;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupC li:hover {
+    background-color: #fff;
+}
+
+#edmsp_pcRightSticky .edmsp_pcRightSticky_menuGroupC li:hover a {
+    color: #f3da35;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+** 區塊【mobile版底部黏人精】id="edmsp_mobileBottomSticky"
+*/
+
+#edmsp_mobileBottomSticky {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "微軟正黑體", "Microsoft JhengHei", Arial
+}
+
+#edmsp_mobileBottomSticky *,
+#edmsp_mobileBottomSticky *::before,
+#edmsp_mobileBottomSticky *::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*max-width: 767px;*/
+    height: 60px;
+    height: calc(60px + constant(safe-area-inset-bottom)*0.6);
+    height: calc(60px + env(safe-area-inset-bottom)*0.6)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li {
+    position: relative;
+    padding-top: 0;
+    height: 100%;
+    text-align: center;
+    list-style: none
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li a i {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 44px auto;
+    background-repeat: no-repeat
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li a i::before,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li a i::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 44px auto;
+    background-repeat: no-repeat
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="5"] li {
+    width: 20%
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="5"] .bg i,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="5"] .bg b {
+    left: calc((20% - 75px) * 0.5)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="4"] li {
+    width: 25%
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="4"] .bg i,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="4"] .bg b {
+    left: calc((25% - 75px) * 0.5)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="3"] li {
+    width: 33.3%
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="3"] .bg i,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three [data-num="3"] .bg b {
+    left: calc((33.3% - 75px) * 0.5)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg b::before,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg b::after {
+    background: transparent
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg_transition {
+    transition: 1s cubic-bezier(0.43, -0.37, 0.4, 1.61)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center bottom
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::before {
+    pointer-events: none;
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::before,
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::after {
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::before {
+    top: 0;
+    height: 37.5vw
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::before {
+    /*left: -150%;*/
+    /*width: 300vw;*/
+    background-size: cover;
+    /*background-position: -25% top;*/
+    /*background-repeat: repeat-x*/
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three .bg::before {
+    background-color: #393968;
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three_bg {
+    transition: none
+}
+
+#edmsp_mobileBottomSticky.cate-open .edmsp_mobileBottomSticky_three_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+#edmsp_mobileBottomSticky.cate-open .edmsp_mobileBottomSticky_three_bg {
+    display: block
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li {
+    margin-top: -10px
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li:nth-of-type(1) i::before {
+    background-image: url('https://www.trplus.com.tw/_ui/edm/trplus/billy_EDMredesign/images/Fixedfooter_icon_1.png?t=1631249230007')
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li:nth-of-type(2) i::before {
+    background-image: url('https://www.trplus.com.tw/_ui/edm/trplus/billy_EDMredesign/images/Fixedfooter_icon_2.png?t=1631249230007')
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li:nth-of-type(3) i::before {
+    background-image: url('https://www.trplus.com.tw/_ui/edm/trplus/billy_EDMredesign/images/Fixedfooter_icon_3.png?t=1631249230007')
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li:nth-of-type(1) i::after {
+    background-image: url('https://www.trplus.com.tw/_ui/edm/trplus/billy_EDMredesign/images/Fixedfooter_icon_1_on.png?t=1631249230007')
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li:nth-of-type(2) i::after {
+    background-image: url('https://www.trplus.com.tw/_ui/edm/trplus/billy_EDMredesign/images/Fixedfooter_icon_2_on.png?t=1631249230007')
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li:nth-of-type(3) i::after {
+    background-image: url('https://www.trplus.com.tw/_ui/edm/trplus/billy_EDMredesign/images/Fixedfooter_icon_3_on.png?t=1631249230007')
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li i::before {
+    transform: translateY(7px) scale(1);
+    transition: 0.2s cubic-bezier(0, 0, 0, 1.65)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li.cate-hover i::before {
+    transform: translateY(-7px) scale(0)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li i::after {
+    transform: translateY(7px) scale(0);
+    transition: 0.2s cubic-bezier(0, 0, 0, 1.65)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_three li.cate-hover i::after {
+    transform: translateY(-3px) scale(1)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float {
+    z-index: 0;
+    position: fixed;
+    left: 2.5%;
+    bottom: 0;
+    margin: 0;
+    width: 95%;
+    border-radius: 8px;
+    background-color: #4a204e;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
+    transition: 0.2s;
+    padding-bottom: 65px;
+    padding-bottom: calc(65px + constant(safe-area-inset-bottom)*0.6);
+    padding-bottom: calc(65px + env(safe-area-inset-bottom)*0.6)
+}
+
+#edmsp_mobileBottomSticky.cate-open .edmsp_mobileBottomSticky_float.cate-open {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    transition: 0.2s
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float * {
+    box-sizing: border-box
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float ul {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 3% 3% 4%
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float ul::after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li {
+    float: left;
+    display: block;
+    margin-left: 2%;
+    margin-top: 3%;
+    width: 32%;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 30px
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li a {
+    display: block
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li:nth-child(3n+1) {
+    margin-left: 0
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li:nth-child(1),
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li:nth-child(2),
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li:nth-child(3) {
+    margin-top: 0
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float {
+    background-color: #a3dde5
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li {
+    background-color: #fff
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li a {
+    color: #3b395b
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li.cate-hover {
+    background-color: #986420
+}
+
+#edmsp_mobileBottomSticky .edmsp_mobileBottomSticky_float li.cate-hover a {
+    color: #fff
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+** 區塊【共用鋪底】id="edmsp_MKSale"
+*/
+
+#edmsp_MKSale {
+    padding: 40px 0px;
+    /* background: url('https://www.trplus.com.tw/_ui/edm/trplus/210901_superbrands/images/bg_floor.jpg'); */
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+** 區塊【共用Banner】id="edmsp_commonBanner"
+*/
+
+#edmsp_commonBanner {
+    padding: 40px 0px;
+    /* background: url('https://cdn.trplus.com.tw/_ui/edm/trplus/210901_superbrands/images/marble_bg.jpg'); */
+}
+
+#edmsp_commonBanner img {
+    width: 100%;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/

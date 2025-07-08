@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+footer#desktopFooter {
+color: #ececec;
+background: #323232;
+box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.2);
+min-width: 1236px;
+margin-top: 58px;
+}
+
+footer#desktopFooter .container {
+padding: 30px 0px;
+}
+
+footer#desktopFooter .nav {
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+line-height: 1;
+color: #f5f5f5;
+}
+
+footer#desktopFooter .nav ul {
+display: flex;
+flex-direction: column;
+list-style: none;
+padding-left: 0;
+margin-top: 18px;
+color: #949494;
+}
+
+footer#desktopFooter .nav ul li {
+margin-bottom: 14px;
+margin-right: 14px;
+-webkit-box-shadow: 0 0 0 0 #d8d8d8;
+box-shadow: 0 0 0 0 #d8d8d8;
+}
+
+footer#desktopFooter .nav ul li:last-child {
+margin-bottom: 0;
+}
+
+footer#desktopFooter .nav ol {
+display: flex;
+flex-direction: row;
+list-style: none;
+padding-left: 0;
+margin-top: 18px;
+color: #EC6C00;
+}
+
+footer#desktopFooter .nav ol li {
+margin-bottom: 14px;
+margin-right:14px;
+-webkit-box-shadow: 0 0 0 0 #d8d8d8;
+box-shadow: 0 0 0 0 #d8d8d8;
+}
+
+footer#desktopFooter .nav ol li:last-child {
+margin-right: 0;
+}
+
+footer#desktopFooter .nav > li {
+margin-right: 0;
+}
+
+footer#desktopFooter .nav > li > a {
+padding: 0 0 ;
+}
+
+footer#desktopFooter .nav-item {
+font-weight: 400;
+-webkit-box-shadow: 0 0 0 0 #d8d8d8;
+box-shadow: 0 0 0 0 #d8d8d8;
+}
+
+footer#desktopFooter .nav-item:last-child {
+flex: 0 1 25%;
+}
+
+footer#desktopFooter .nav-item:last-child ul.nav ul.nav {
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: start;
+}
+
+footer#desktopFooter .nav-item:last-child ul.nav ul.nav li.nav-item {
+width: fit-content;
+}
+
+footer#desktopFooter .nav-link {
+padding: 0;
+color: #FFFFFF;
+font-size: 14px;
+font-weight: 300;
+}
+
+footer#desktopFooter .nav-link:hover {
+text-decoration: underline;
+background-color: #323232;
+}
+
+footer#desktopFooter .nav-link__dp {
+width: 85px;
+height: auto;
+}
+
+footer#desktopFooter .copyright {
+text-align: center;
+background: #000000;
+color: #FFFFFF;
+font-size: 12px;
+font-weight: 300;
+padding: 15px 0;
+}
+
+footer#desktopFooter .copyright span {
+display: inline-block;
+width: 5px;
+height: 30px;
+}
+
+/* 新舊版本合併例外處理 */
+
+/* 共用 */
+.mobile-nav{
+display: none;
+}
+
+nav.nav{
+margin-top: 0;
+}
+
+nav.nav form input.form-control{
+margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .noHeaderFooter .main {
+        padding-top: 0 !important;
+        padding-bottom: 5px !important;
+    }
+
+    footer {
+        margin: 20;
+    }
+
+    footer#newTrplusMobileFooter {
+        margin: 0;
+        display: none;
+    }
+}
